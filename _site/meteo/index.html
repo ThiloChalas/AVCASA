@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Meteo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <a href="/" class="logo">AVCASA</a>
+        <nav class="desktop-nav" id="nav">
+          <ul class="links">
+            <li><a href="/leclub">Le Club</a></li>
+            <li><a href="/nosplaneurs">Nos planeurs</a></li>
+            <li><a href="/stagesdec">Stages</a></li>
+            <li><a href="/infospilotes">Infos pilotes</a></li>
+            <li><a href="/espacemembres">Espace membres</a></li>
+            <li><a href="/galeriephoto">Galerie</a></li>
+          </ul>
+          <a href="#menu" class="mobile-menu-toggle">Menu</a>
+        </nav>
+      </header>
+
+      <!-- Mobile Menu -->
+      <nav id="menu">
+        <ul class="links">
+            <li><a href="/leclub">Le Club</a></li>
+            <li><a href="/nosplaneurs">Nos planeurs</a></li>
+            <li><a href="/stagesdec">Stages</a></li>
+            <li><a href="/infospilotes">Infos pilotes</a></li>
+            <li><a href="/espacemembres">Espace membres</a></li>
+            <li><a href="/galeriephoto">Galerie</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <article id="main">
+        <header
+          style="background-image: url('/assets/images/accueil.jpeg'); background-size: cover; background-position: center; padding: 0rem 0; color: white;">
+            <div class="inner" style="
+                                      background-color: rgba(0, 0, 0, 0.5);
+                                      width: 100%;
+                                      height: 100%;
+                                      padding: 6rem 2rem;
+                                      box-sizing: border-box;
+                                    ">
+            <h2>Météo</h2>
+            
+              <p>Prévisions météo pour voler à Saint-Auban</p>
+            
+          </div>
+        </header>
+
+
+        <!-- Page content -->
+        <section>
+          <div class="inner">
+            
+<!-- Intro -->
+<section class="wrapper style2">
+  <div class="inner">
+    <p>Vous trouverez ici diverses quelques informations vis à vis de la météo locale. <strong>Pour rappel la présence au briefing météo du CNVV est obligatoire pour tous les pilotes ayant prévu de voler (Auditoire CNVV, 9h45 en semaine, 10h30 le samedi).</strong></p>
+  </div>
+</section>
+<!-- Iframe Windy -->
+<section class="wrapper alt style2">
+  <div class="inner">
+        <p>Prévisions météo générales et vent pour Saint-Auban (Windy).</p>
+        <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=kt&zoom=9&overlay=wind&product=icond2&level=surface&lat=43.896&lon=6.004&detailLat=44.073&detailLon=6.003&detail=true" width="100%" height="600px">
+        This browser does not support iframes. Please <a href="https://www.windy.com/">visit Windy</a>.
+        </iframe>
+  </div>
+</section>
+
+<!-- Iframe Meteo parapente -->
+
+<section class="wrapper style2">
+  <div class="inner">
+        <p>Prévisions météo pour le vol à voile à Saint-Auban (Meteo Parapente).</p>
+        <iframe src="https://meteo-parapente.com/#/44.0585,5.9917,9" width="100%" height="600px">
+        This browser does not support iframes. Please <a href="https://www.meteo-parapente.com/">visit Meteo Parapente</a>.
+        </iframe>
+  </div>
+</section>
+          </div>
+        </section>
+      </article>
+
+    <!-- Informations de contact -->
+    <section id="contact" class="wrapper style2">
+      <div class="inner">
+        <div class="split style1">
+            <h2>Contact</h2>
+            <!-- Contact info -->
+            <section class="contact-info">
+                <ul class="contact">
+                <li>
+                    <strong>Adresse :</strong><br>
+                    Aérodrome de Saint-Auban <br> 04600 Saint-Auban, France
+                </li>
+                <!--
+                <li>
+                    <strong>Téléphone :</strong><br>
+                    <a href="tel:+33000000000">+33 0 00 00 00 00</a>
+                </li> -->
+                <li>
+                    <strong>Email :</strong><br>
+                    <a href="mailto:avcasa@sfr.fr">avcasa@sfr.fr</a>
+                </li>
+                </ul>
+            </section>
+
+            <!-- Google Maps iframe -->
+            <section class="map-embed">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2273.3685686929!2d5.989066075151397!3d44.06460532572699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cbbc9afbb810fd%3A0xec64f7df26f6ea!2sAssociation%20V%C3%A9livole%20de%20Ch%C3%A2teau-Arnoux%2FSaint-Auban!5e1!3m2!1sfr!2sfr!4v1753301530837!5m2!1sfr!2sfr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+            </div>
+      </div>
+    </section>
+
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <!-- Add social media icons here if you want -->
+        </ul>
+        <p>&copy; AVCASA - Tous droits réservés.</p>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+  </body>
+</html>
