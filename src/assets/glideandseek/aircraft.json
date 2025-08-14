@@ -16,5 +16,11 @@
     "cn": "LP",
     "glider": "ASW 28-18",
     "flarm": ["FLR38B75B"]
+  },
+  {
+    "name": "TEST",
+    "cn": "MV",
+    "glider": "KA21",
+    "flarm": ["39209B"]
   }
 ]
