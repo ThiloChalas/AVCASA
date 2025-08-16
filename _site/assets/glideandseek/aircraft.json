@@ -1,0 +1,20 @@
+[
+  {
+    "name": "AVCASA - DUO Discus",
+    "cn": "LT",
+    "glider": "DUO Discus",
+    "flarm": ["FLRD01468"]
+  },
+  {
+    "name": "AVCASA - Pegase",
+    "cn": "LV",
+    "glider": "Pegase",
+    "flarm": ["FLRDDA4B1"]
+  },
+  {
+    "name": "AVCASA - ASW28-18",
+    "cn": "LP",
+    "glider": "ASW 28-18",
+    "flarm": ["FLR38B75B"]
+  }
+]
