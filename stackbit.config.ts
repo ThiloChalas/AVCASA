@@ -1,11 +1,7 @@
-import { defineStackbitConfig, SiteMapEntry } from "@stackbit/types";
-import { GitContentSource } from "@stackbit/cms-git";
-import fs from "fs";
-import path from "path";
+const { defineStackbitConfig } = require("@stackbit/types");
+const { GitContentSource } = require("@stackbit/cms-git");
 
-const contentDir = path.join(__dirname, "src");
-
-export default defineStackbitConfig({
+module.exports = defineStackbitConfig({
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
@@ -16,6 +12,7 @@ export default defineStackbitConfig({
           label: "Site Page",
           type: "page",
           filePath: "src/{slug}.njk",
+          mediaType: "text/njk",
           urlPath: "/{slug}",
           fields: [
             { name: "title", type: "string", required: true },
@@ -27,17 +24,15 @@ export default defineStackbitConfig({
       ]
     })
   ],
-
   siteMap: ({ documents }) => {
     return documents.map((document) => {
       const isHomePage = document.slug === "index";
-      const urlPath = isHomePage ? "/" : `/${document.slug}`;
       return {
         stableId: document.id,
-        urlPath,
+        urlPath: isHomePage ? "/" : `/${document.slug}`,
         document,
         isHomePage
-      } satisfies SiteMapEntry;
+      };
     });
   }
 });
