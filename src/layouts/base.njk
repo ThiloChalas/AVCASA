@@ -40,7 +40,7 @@
 
 
   <!-- Banner -->
-  <section id="banner" style="background-image: url('/assets/images/accueil.jpeg'); background-size: cover; background-position: center; height: 60vh;">
+  <section id="banner" style="background-image: url('{{ bannerImage or '/assets/images/accueil.jpeg' }}'); background-size: cover; background-position: center; height: 60vh;">
     <div class="inner">
       <h2>{{ bannerHeading }}</h2>
       <p>{{ bannerSubheading }}</p>

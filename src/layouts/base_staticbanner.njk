@@ -56,6 +56,11 @@
               <p>{{ bannerSubheading }}</p>
             {% endif %}
           </div>
+          {% if bannerImageCredits %}
+          <div style="background-color: rgba(0, 0, 0, 0.5); padding: 2px; font-size: 0.5em; border-radius: 2px; text-align: right;">
+            Photo de fond: {{ bannerImageCredits }}
+          </div>
+          {% endif %}
         </header>
 
 
