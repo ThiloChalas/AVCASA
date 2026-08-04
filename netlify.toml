@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+# Site-wide password splash screen.
+# Only active while SITE_PASSWORD is set as an environment variable
+# in Netlify (Site configuration > Environment variables).
+# Remove this block (and netlify/edge-functions/password-gate.js)
+# once the site is ready to go public.
+[[edge_functions]]
+  path = "/*"
+  function = "password-gate"
