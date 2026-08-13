@@ -1,4 +1,4 @@
-// netlify/edge-functions/password-gate.js
+// USAGE MOVE TO: netlify/edge-functions/password-gate.js
 //
 // Simple site-wide password splash screen.
 // Set the real password in Netlify: Site configuration > Environment variables
