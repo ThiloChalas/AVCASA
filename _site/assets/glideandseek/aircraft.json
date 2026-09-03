@@ -13,8 +13,8 @@
   },
   {
     "name": "AVCASA - ASW28-18",
-    "cn": "LP",
+    "cn": "BD",
     "glider": "ASW 28-18",
-    "flarm": ["FLR38B75B"]
+    "flarm": ["FLRDDEFCF"]
   }
 ]
